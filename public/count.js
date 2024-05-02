@@ -15,15 +15,16 @@ let hour = 0;
 let minute = 0;
 let second = 0;
 let total = 0;
-let eventName;
+let eventName = "Your event";
 let interval;
 
 startBtn.onclick = () => {
    showBoard.classList.remove("hidden");
    acceptBoard.classList.add("hidden");
-   if (eventTitle.value != "")
+   if (eventTitle.value != "") {
       showTitle.textContent = ` ${eventTitle.value} Loading...`;
-   eventName = eventTitle.value;
+      eventName = eventTitle.value;
+   }
    day = Number(inputValues[0].value);
    hour = Number(inputValues[1].value);
    minute = Number(inputValues[2].value);
