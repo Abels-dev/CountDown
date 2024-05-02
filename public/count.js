@@ -41,6 +41,7 @@ restartBtn.onclick = () => {
    showBoard.classList.add("hidden");
    acceptBoard.classList.remove("hidden");
    showTitle.textContent = "Your event loading...";
+   eventName="Your event"
    total = 0;
 };
 function countDown() {
