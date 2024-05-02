@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-El {
+   @apply border-2 w-32 border-slate-400 p-2 bg-slate-400 rounded-md outline-none;
+}
+.label-input {
+   @apply flex flex-col gap-2 items-center;
+}
+.label-text {
+   @apply uppercase font-bold text-cyan-900 text-xl;
+}
+.title {
+   @apply uppercase font-bold text-cyan-900 text-2xl mb-6 mt-8;
+}
+.showTime {
+   @apply uppercase font-bold text-cyan-900 text-xl;
+}
+.container {
+   @apply w-36 h-14  relative;
+}
+.innerContainer {
+   @apply w-full h-full absolute top-0 left-0 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] transition-all duration-1000 grid place-content-center;
+}
+.slide-up {
+   @apply [transform-origin:bottom-right] [transform:rotateX(-360deg)];
+}
+.button {
+   @apply text-cyan-950 font-bold uppercase tracking-wide border-2 border-transparent w-56 h-16 rounded-md shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] self-center;
+}

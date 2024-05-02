@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="output.css" />
+      <script src="count.js" defer></script>
+   </head>
+   <body class="p-4 bg-gradient-to-r from-[#764BA2] to-[#667EEA]">
+      <main>
+         <h1
+            class="uppercase font-bold text-4xl m-auto text-center text-cyan-900 mt-3 mb-8">
+            CountDown Your Event
+         </h1>
+         <section class="accept p-2 md:pl-10 max-w-2xl flex flex-col">
+            <div class="mb-12">
+               <label for="" class="label-text">Title of your event :</label>
+               <input
+                  type="text"
+                  id="title"
+                  class="border-2 w-60 border-slate-400 p-2 bg-slate-400 rounded-md outline-none" />
+            </div>
+            <div
+               class="flex gap-2 sm:justify-between flex-col sm:flex-row mb-16">
+               <div class="label-input">
+                  <label for="" class="label-text">Day</label>
+                  <input type="text" class="input input-El" />
+               </div>
+               <div class="label-input">
+                  <label for="" class="label-text">Hour</label>
+                  <input type="text" class="input input-El" />
+               </div>
+               <div class="label-input">
+                  <label for="" class="label-text">Minutes</label>
+                  <input type="text" class="input input-El" />
+               </div>
+               <div class="label-input">
+                  <label for="" class="label-text">Second</label>
+                  <input type="text" class="input input-El" />
+               </div>
+            </div>
+            <button id="start" class="button">Start CountDown</button>
+         </section>
+         <section class="show p-2 md:pl-10 max-w-2xl flex flex-col hidden">
+            <h2 id="showTitle" class="title">Your event loading...</h2>
+            <div
+               class="flex gap-2 sm:justify-between flex-col sm:flex-row mb-16">
+               <div class="container">
+                  <div class="inner innerContainer">
+                     <p id="day" class="showTime"></p>
+                  </div>
+               </div>
+               <div class="container">
+                  <div class="inner innerContainer">
+                     <p id="hour" class="showTime"></p>
+                  </div>
+               </div>
+               <div class="container">
+                  <div class="inner innerContainer">
+                     <p id="minute" class="showTime"></p>
+                  </div>
+               </div>
+               <div class="container">
+                  <div class="inner innerContainer">
+                     <p id="second" class="showTime"></p>
+                  </div>
+               </div>
+            </div>
+            <button id="restart" class="button">Start New Event</button>
+         </section>
+      </main>
+   </body>
+</html>
